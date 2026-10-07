@@ -1,0 +1,32 @@
+<div style="padding: 20px; max-width: 600px; margin: auto;">
+  <h2>Audit Log</h2>
+
+  <input [(ngModel)]="username" placeholder="Username" /><br><br>
+  <input [(ngModel)]="password" type="password" placeholder="Password" /><br><br>
+
+  <button (click)="getAuditLog()">Get Audit Log</button>
+  <button (click)="goToUsers()">Back to Users</button>
+
+  <p>{{ message }}</p>
+
+  @if (auditLogs.length > 0) {
+    <table style="width:100%; margin-top:10px; border-collapse: collapse;">
+      <tr>
+        <th style="border: 1px solid black; padding: 8px;">ID</th>
+        <th style="border: 1px solid black; padding: 8px;">Actor</th>
+        <th style="border: 1px solid black; padding: 8px;">Action</th>
+        <th style="border: 1px solid black; padding: 8px;">Target</th>
+        <th style="border: 1px solid black; padding: 8px;">Timestamp</th>
+      </tr>
+      @for (log of auditLogs; track log.id) {
+        <tr>
+          <td style="border: 1px solid black; padding: 8px;">{{ log.id }}</td>
+          <td style="border: 1px solid black; padding: 8px;">{{ log.actor }}</td>
+          <td style="border: 1px solid black; padding: 8px;">{{ log.action }}</td>
+          <td style="border: 1px solid black; padding: 8px;">{{ log.target }}</td>
+          <td style="border: 1px solid black; padding: 8px;">{{ log.timestamp }}</td>
+        </tr>
+      }
+    </table>
+  }
+</div>

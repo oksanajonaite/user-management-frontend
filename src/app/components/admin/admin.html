@@ -1,0 +1,19 @@
+<div style="padding: 20px; max-width: 400px; margin: auto;">
+  <h2>Admin Panel</h2>
+
+  <input [(ngModel)]="username" placeholder="Admin username" /><br><br>
+  <input [(ngModel)]="password" type="password" placeholder="Admin password" /><br><br>
+  <input [(ngModel)]="targetId" type="number" placeholder="User ID" /><br><br>
+
+  <h3>Change Role</h3>
+  <input [(ngModel)]="newRole" placeholder="New role (USER/ADMIN/MANAGER)" /><br><br>
+  <button (click)="changeRole()">Change Role</button>
+
+  <h3>Delete User</h3>
+  <button (click)="deleteUser()">Delete User</button>
+
+  <p>{{ message }}</p>
+
+  <button (click)="goToUsers()">Back to Users</button>
+  <button (click)="goToAudit()">Audit Log</button>
+</div>
