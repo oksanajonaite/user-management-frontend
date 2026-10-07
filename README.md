@@ -1,6 +1,6 @@
 # User Management Frontend
 
-Angular frontend for the [User Management API](https://github.com/YOUR_USERNAME/user-management-api) -- provides a web interface for user registration, authentication, administration, and audit log viewing.
+Angular frontend for the [User Management API](https://github.com/oksanajonaite/user-management-api) -- provides a web interface for user registration, authentication, administration, and audit log viewing.
 
 ## Features
 
@@ -21,12 +21,12 @@ Angular frontend for the [User Management API](https://github.com/YOUR_USERNAME/
 ## Prerequisites
 
 - Node.js 18+
-- The [backend API](https://github.com/YOUR_USERNAME/user-management-api) running on `http://localhost:8080`
+- The [backend API](https://github.com/oksanajonaite/user-management-api) running on `http://localhost:8080`
 
 ## Getting Started
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/user-management-frontend.git
+git clone https://github.com/oksanajonaite/user-management-frontend.git
 cd user-management-frontend
 npm install
 ng serve
@@ -55,4 +55,4 @@ Start the backend first -- it seeds these users (password for all: `demo`):
 
 ## Related
 
-Backend API: [user-management-api](https://github.com/YOUR_USERNAME/user-management-api)
+Backend API: [user-management-api](https://github.com/oksanajonaite/user-management-api)
